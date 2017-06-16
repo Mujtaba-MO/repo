@@ -1,0 +1,315 @@
+/*Sitewide styles*/
+/*--Universal Selector*/
+* {
+	/*change the default color of all elements to black*/
+	color: #000;
+}
+/*changes made to the body of website*/
+body {
+	background: none repeat scroll 0 0 #fff;
+	/*changing the text color to light balcisk*/
+	color: #222222;
+	/*margin has set to default */
+	margin: 0;
+
+}
+
+/*Anchor tag that are hovered on*/
+
+a {
+ /*this changes the text color to light blackish*/
+      color: #222222;
+ /* remove default underline*/
+      text-decoration: underline;
+}
+/*select all anchor tags that are hovered on*/
+a:hover {
+	/*changes color on hover*/
+	color: #222222;
+	/*adds underline when user hovers on it*/
+	text-decoration: underline;
+}
+
+
+/* this selects all the anchor tags that have a class of button and are hovered on*/
+
+a.button:hover {
+	/*remove underline from hovered on buttons*/
+	text-decoration: none;
+}
+/*Top Section - Navigation*/
+/*select any elements with a class of top-navigation*/
+.top-navigation {
+
+	float: right;
+	margin-right: 25px;
+}
+/*select any elements with a class of top-navigation and find any li tags inside them*/
+
+.top-navigation li {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 5px 10px 0 0;
+	font-size: 13px;
+
+}
+/*select font awesome standard class to change the icons*/
+.fa {
+	font-size: 20px;
+	vertical-align: top;
+	opacity: 0.7;
+	cursor: default;
+}
+/*select the font awesome icons on hover*/
+.fa:hover {
+	opacity: 1.0;
+}
+/*select any elements with a class od share-button*/
+.share-button {
+	background-color: #f2f2f2;
+	padding: 7px 15px;
+	cursor: default;
+	position: relative;
+	top: -3px;
+
+}
+
+/* this one selects any element with a class of share-button which is hovered on*/
+.share-button:hover {
+	background-color: #E1E1E1;
+
+}
+
+/*in here selector selects any element with a class of profile-img*/
+.profile-img{
+	border-radius: 25px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	top: 9px;
+}
+
+/* Middle Section - Search Box*/
+/* here selector selects any element with a class of search-box*/
+.search-box {
+	position: absolute;
+	margin-top: 75px;
+	width: 100%;
+}
+/*select any elements with a class of search-box and then find any img tags inside */
+
+.search-box img {
+	padding: 142px 0 24px 0;
+	display: block;
+	margin: 0 auto;
+
+}
+
+/*here selector selects elements with a class of serach-box and then finds any input inside*/
+.search-box input {
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+
+}
+/*here the selector selects any elements with a class of search-box and then finds any input tags that are currently focused*/
+.search-box input:focus { 
+	border-color: #f5f5f5;
+
+}
+/*selctor selects any elements with a class of search-buttons*/
+.search-button {
+	text-align: center;
+	padding-left: 0;
+}
+/*here selector selects any elements with a class of search-button and find all button tags inside*/
+.search-button button {
+	background-color: #f5f5f5;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	margin: 17px 6px;
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*here selector selects any elements with a class of search-button and finds all button tags inside that are hovered on*/
+.search-button button:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1);
+	color: #333333;
+
+}
+
+/*botton section - site links */
+/* here selector selects any elements with a class of button-site-link*/
+.bottom-site-links {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+
+}
+/*selector selects any element with a class of left-site-links*/
+.left-site-links,
+/*same thing applies with right-site-links*/
+.right-site-links {
+	margin: 0;
+
+}
+/* here selector selects any elements with a class of left-site-links*/
+.left-site-links {
+	float: left;
+	padding-left: 20px;}
+/* here selector selects any elements with a class of right-site-links*/
+.right-site-links {
+	float: right;
+	padding-right: 10px;
+}
+/*here selector finds any elements with a class of left-site-links mand finds all the li tags inside*/
+.left-site-links li,
+/*here selector finds any elements with a class of right-site-links and finds all the li tags inside */
+.right-site-links li {
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+/*here selector is slecting any elements with a class right-site-links and finds all the li tags inside then the first anchor tag inside*/
+
+.right-site-links li a:first-child {
+	padding-right: 8px;
+}
+/*selector selects any elements witha class of left-site-linksand finds all li tags inside then the 2nd anchor tags inside*/
+.left-site-links li:nth-child(2),
+/*here selector selects any elements with a class of left-site-links and finds all li tags inside then the 3rd anchor tags inside*/
+.left-site-links li:nth-child(3) {
+	margin-left: 7px;
+
+}
+
+/*here we select any elements with a class of left-site-links and find all the li tags inside then all anchor tags inside*/
+.left-site-links li a,
+/* here we select any elements with a class of right-site-links and finds all li tags inside then all anchor tags inside*/
+.right-site-links li a {
+	color: #666666;
+	margin: 2px 10px 0;
+	letter-spacing: 0.1px;
+	font-size: 14px;
+}
+
+@media (min-width: 700px) {
+	.profile-img {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 525px) {
+
+	.right-site-links {
+
+		display: none;
+	}
+	.left-site-links {
+		text-align: center;
+		float: none;
+		padding-left: 20px;
+	}
+	.searchbox input {
+		width: 70%;
+	}
+}
+
+@media (max-width: 454px) {
+	* {
+		font-size: 15px;
+	}
+
+}      .profile-img {
+	display: none;
+}
+
+
+@media (max-width: 415px) {
+    	.profile-img {
+    		display: none;
+    	}
+    	.right-site-links {
+    		display: none;
+    }
+
+       .left-site-links {
+       	margin-left: 10px;
+       }
+       .search-box input {
+       	width: 75%;
+       }
+ 
+   } 	
+     }
+     
+    
+    
+      @media (max-width: 405px) {
+    	.profile-img {
+    		display: none;
+    	}
+ 
+    	
+    .right-site-links {
+    	display: none;
+    }
+    .left-site-links {
+    	text-align: center;
+    	float: none;
+    }
+    .search-box input {
+    	width: 70%;
+    }
+
+   }
+
+   @media (max-width: 395px) {
+   	.share-button {
+   		display: none;
+   	}
+   }
+     
+     	@media (max-width:376px) {
+
+	.profile-img {
+		display: none;
+	}
+	.left-site-links {
+		margin-right: 10px;
+	}
+	
+}
+
+
+@media (max-width: 321px) {
+     	.share-button {
+     		display: none;
+     	}
+     	.left-site-links {
+     		bottom: 0;
+     		margin-right: 5px;
+     	}
+     	.right-site-links {
+     		display: none;
+     	}
+     	.search-box input {
+     		width: 80%;
+     	}
+
+     	
+
